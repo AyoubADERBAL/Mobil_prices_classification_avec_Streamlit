@@ -24,14 +24,16 @@ else:
 
 model = pickle.load(open('model1.pkl','rb'))
 
-st.title("📱 Application de Prédiction de la Gamme de Prix des Téléphones Mobiles
+st.title("""
+📱 Application de Prédiction de la Gamme de Prix des Téléphones Mobiles
 Bienvenue dans cette application interactive basée sur l’intelligence artificielle !
 Elle vous permet de prédire la gamme de prix d’un téléphone portable (Low, Medium, High, ou Very High Cost) en fonction de ses caractéristiques techniques.
 
 🔍 Il vous suffit de renseigner les spécifications techniques de votre téléphone (RAM, mémoire interne, appareil photo, batterie, etc.), puis de cliquer sur le bouton "Valider" pour obtenir une estimation de sa catégorie de prix.
 
 Cette application a été réalisée dans le cadre d’un mini-projet de classification en machine learning, à partir d’un jeu de données appelé mobile_prices.csv.
-Le modèle a été entraîné, sauvegardé, puis déployé à l’aide de Streamlit afin de rendre l’interface accessible à tous.")
+Le modèle a été entraîné, sauvegardé, puis déployé à l’aide de Streamlit afin de rendre l’interface accessible à tous.
+""")
 
 st.markdown("Cette application web simple prédit la gamme de prix de votre téléphone mobile en fonction de ses caractéristiques techniques.")
 st.markdown("Les gammes de prix sont définies comme suit : ")
